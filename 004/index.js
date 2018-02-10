@@ -8,7 +8,9 @@ let f = formatDate(d);
 // 実行中のスクリプトからの相対パスを取得
 // __dirname は実行中のスクリプトの絶対パス
 // path.join でパスを正しく連結できる
-let p = path.join(__dirname, 'out.txt');
+let p = path.join(__dirname, 'out.txt');//__dirname この階層だと/Users/morihideo/Desktop/javascript_school/sample_20180210/004/
+//ディレクトリの出力はできないようだ
+console.log(p); //確認のため追加
 
 fs.writeFile(p, f, (error) => {
     if(error){
