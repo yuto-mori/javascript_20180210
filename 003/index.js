@@ -1,6 +1,8 @@
 
 // require を使ってモジュールをインポート
 // fs モジュールはファイルの入出力を行うモジュール
+//外部ライブラリを参照する方法が、各JSファイルをモジュール化しておいて、使うときはrequire()で読み込むやりかた。
+//参考 https://qiita.com/uryyyyyyy/items/b10b012703b5396ded5a
 let fs = require('fs');
 
 let d = new Date();
