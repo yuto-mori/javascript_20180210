@@ -1,0 +1,4 @@
+{
+    "now_year":"getFullYear",
+    "now_month":"getMonth"
+}

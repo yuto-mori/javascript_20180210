@@ -10,7 +10,7 @@ console.log(formatDate(d));
  * @param {Date} date - フォーマットする Date 型のデータ
  * @param {string} [delimiter='/'] - 年月日の区切り文字
  */
-function formatDate(date, delimiter = '/'){//引数の()括弧内で代入を行うことで、デフォルト値を設定できる
+function formatDate(date, delimiter = '/'){//引数の()括弧内で代入を行うことで、デフォルト値を設定できる(引数の値がないとき使う)
     let y = date.getFullYear();  // 四桁の年
     let m = date.getMonth() + 1; // 月（０始まり）
     let d = date.getDate();      // 日

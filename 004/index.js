@@ -9,7 +9,7 @@ let f = formatDate(d);
 // __dirname は実行中のスクリプトの絶対パス
 // path.join でパスを正しく連結できる
 let p = path.join(__dirname, 'out.txt');//__dirname この階層だと/Users/morihideo/Desktop/javascript_school/sample_20180210/004/
-//ディレクトリの出力はできないようだ
+//ディレクトリの作成はできないようだ(ディレクトリを作ればファイルの出力はできた)
 console.log(p); //確認のため追加
 
 fs.writeFile(p, f, (error) => {
