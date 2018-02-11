@@ -18,6 +18,7 @@ server.on('request', (request, response) => {
     // レスポンスはプレーンテキストであることを設定している
     //https://mag.osdn.jp/13/03/18/0939236/3 参考
     //http://libro.tuyano.com/index3?id=1126003 参考
+    //http://www.pxt.jp/ja/diary/article/265/ (request, response)の引数についてはここを参照
     //
     response.writeHead(200, {'Content-Type': 'text/plain'});
     // end にフォーマットした日付文字列を渡して終了
