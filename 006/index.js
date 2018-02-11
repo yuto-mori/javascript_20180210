@@ -16,6 +16,8 @@ server.on('request', (request, response) => {
     // パスの指定に従ってファイルを開く
     // 第一引数がファイルのパス、第二引数は文字コード、
     // 第三引数がファイルを開いた後に呼ばれるコールバック関数
+    // http://info-i.net/fs-readfile (error, data)の引数の参考
+    //第3引数にコールバック関数を指定します。この関数の第1引数はエラーオブジェクトであり、第2引数はファイルのデータです。
     let html = fs.readFile(pathString, 'utf-8', (error, data) => {
         if(error){
             // エラーが起こった場合はレスポンスヘッダに 404 ステータスを
